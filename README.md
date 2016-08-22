@@ -1,4 +1,4 @@
-##sample reactjs for js noobs
+# reacjts-for-js-noobs
 
 Using:
 
