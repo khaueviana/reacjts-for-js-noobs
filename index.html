@@ -11,29 +11,7 @@
 
 <body>
 
-  <div class="well clearfix">
-    <textarea class="form-control"></textarea><br/>
-    <button class="btn btn-primary pull-right">Tweet</button>
-  </div>
-
-  <script>
-
-  // Desabilita o botão inicialmente
-  $("button").prop("disabled", true);
-
-  // Quando o valor do textarea  muda...
-  $("textarea").on("input", function() {
-    // Se tiver pelo menos um caracter...
-    if ($(this).val().length > 0) {
-      // Ativa o botão.
-      $("button").prop("disabled", false);
-    } else {
-      // Senão, desabilita o botão.
-      $("button").prop("disabled", true);
-    }
-  });    
-
-</script>
+   <div id="container"></div>
 
 </body>
 
