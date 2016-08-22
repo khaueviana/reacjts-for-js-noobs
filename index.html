@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <title>React App</title>
+</head>
+
+<body>
+
+  <div class="well clearfix">
+    <textarea class="form-control"></textarea><br/>
+    <button class="btn btn-primary pull-right">Tweet</button>
+  </div>
+
+  <script>
+
+  // Desabilita o botão inicialmente
+  $("button").prop("disabled", true);
+
+  // Quando o valor do textarea  muda...
+  $("textarea").on("input", function() {
+    // Se tiver pelo menos um caracter...
+    if ($(this).val().length > 0) {
+      // Ativa o botão.
+      $("button").prop("disabled", false);
+    } else {
+      // Senão, desabilita o botão.
+      $("button").prop("disabled", true);
+    }
+  });    
+
+</script>
+
+</body>
+
+</html>
